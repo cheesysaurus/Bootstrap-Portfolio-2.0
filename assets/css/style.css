@@ -1,0 +1,471 @@
+/* don't mess with width if using bootstrap, only set height if want specific height because it'll grow responsively as well 
+get into the habit of just using margin & padding to set white space */
+/* comment out a section and see what it reverts back to, then reintroduce small parts */
+/* get in the habit of using percentages and rem/em (anything over 25px, don't use px) */
+/* start looking into flexbox & getting used to using it */
+/* don't need box-sizing: border-box when using bootstrap? */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+html {
+	/* Box Model */
+	min-height: 100%; /* why? */
+
+	/* Positioning */
+	position: relative; /* why? */
+}
+
+body {
+	/* Box Model */
+	padding-top: 113px; /* header height (73px) + header margin-bottom height (40px) */ 
+	padding-bottom: 110px; /* footer height (70px) + footer margin-top height (40px) */
+	
+	/* Typography */
+	font-family: 'Open Sans Condensed', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: normal;
+	word-spacing: 1px;
+
+	/* Visual */
+    background: url("../images/background/topography/topography-tan.png");
+	color: #777;
+}
+
+/* ----------------------
+		 HEADER
+----------------------- */
+
+.navbar-custom {
+	/* Visual */
+	border-bottom: 2px solid #C1B9A4;
+	/* box-shadow: 0 0 5px 2px #ebebeb; */
+	background: #fff;
+}
+
+/* --- Name & Background --- */
+
+#logo {
+	/* Box Model */
+	width: 240px;
+	height: 73px;
+	padding-top: 25px;
+	margin-left: 70px;
+
+	/* Typography */
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+	/* Visual */
+	background: #C1B9A4;
+	color: #fff;
+}
+
+#logo a:hover {
+	text-decoration: none;
+}
+
+/* --- Navigation --- */
+
+.navbar-right-custom {
+	/* Box Model */
+	padding-top: 19px;
+	margin-right: 70px;
+}
+
+.navbar-right-custom li {
+	padding-left: 30px;
+}
+
+.navbar-right-custom li a {
+	text-decoration: none;
+	color: #777;
+	padding: 6px 10px;
+}
+
+.navbar-right-custom li a:hover {
+	color: #4aaaa5;
+	border: 1px solid #4aaaa5;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* ----------------------
+		 SECTION
+----------------------- */
+
+.section-content {
+	/* Box Model */
+	padding: 40px 38px 34px;
+
+	/* Visual */
+	background: #fff;
+	border: 2px solid #ededed;
+	border-radius: 2px;
+}
+
+.section-header {
+	/* Box Model */
+	margin-top: -8px;
+
+	/* Typography */
+	font-family: 'Amatic SC', serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+	/* Visual */
+	color: #C1B9A4;
+}
+
+.section-ruler {
+	border-top: 3px solid #dfdfdf;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+
+/* --- ABOUT --- */
+
+#prof-img {
+	/* Box Model */
+	width: 200px;
+	margin-top: 10px;
+	margin-right: 30px;
+	
+	/* Positioning */
+	float: left;
+}
+
+section p {
+	/* Box Model */
+	padding-bottom: 18px;
+
+	/* Typography */
+	line-height: 32px;
+}
+
+section p:last-child {
+	/* Box Model */
+	padding-bottom: 0;
+}
+
+section p a {
+	/* Visual */
+	color: #4aaaa5;
+	text-decoration: none;
+}
+
+section p a:hover {
+	/* Visual */
+	text-decoration: underline;
+}
+
+/* --- PORTFOLIO --- */
+
+.gallery {
+	/* Box Model */
+	padding-top: 15px;
+
+	/* Positioning */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.gallery img {
+	/* Box Model */
+	width: 300px;
+	height: 200px;
+	margin-bottom: -5px;
+}
+
+figcaption {
+	/* Box Model */
+	width: 300px;
+	height: 40px;
+	padding-top: 2.8%;
+
+	/* Positioning */
+	position: relative;
+	bottom: 50px;
+
+	/* Visual */
+	color: #eee;
+	background: #464646;
+}
+
+/* --- CONTACT -- */
+
+form {
+	/* Box Model */
+	margin-top: 17px;
+}
+
+.input-field {
+	/* Box Model */
+	width: 100%;
+	margin: 7px 0 20px;
+	padding: 7px;
+
+	/* Typography */
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+
+	/* Visual */
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	color: #4aaaa5;
+}
+
+input::placeholder {
+	/* Visual */
+	color: #aaa;
+}
+
+input[type=submit] {
+	/* Box Model */
+	width: 85px;
+	padding: 8px 12px;
+
+	/* Visual */
+	background: #4aaaa5;
+	color: #eee;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+/* ----------------------
+		  ASIDE
+----------------------- */
+
+.aside-content {
+	/* Box Model */
+	padding: 30px 35px 30px;
+
+	/* Visual */
+	background: #fff;
+	border: 2px solid #ededed;
+	border-radius: 2px;
+}
+
+.aside-header {
+	/* Typography */
+	font-family: 'Amatic SC', serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+
+	/* Visual */
+	color: #C1B9A4;
+}
+
+.aside-ruler {
+	/* Visual */
+	border-top: 2px solid #eee;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+
+/* Icons */
+
+#icons {
+	/* Box Model */
+	margin-left: -5px;
+}
+
+/* ----------------------
+		 FOOTER
+----------------------- */
+
+.navbar-fixed-bottom {
+	/* Box Model */
+	height: 70px;
+	
+	/* Visual */
+	border-top: 5px double #C1B9A4;
+	background: #ebebeb;
+}
+
+footer {
+	/* Box Model */
+	padding-top: 27px;
+
+	/* Typography */
+	font-size: 0.75em;
+
+	/* Visual */
+	color: #999;
+}
+
+/* ----------------------
+		 @MEDIA
+----------------------- */
+
+@media only screen and (max-width: 992px) {
+
+	/* PORTFOLIO */
+	.gallery {
+		/* Box Model */
+		padding-left: 40px;
+
+		/* Positioning */
+		flex-flow: column nowrap;
+	}
+
+	.gallery img {
+		/* Box Model */
+		width: 90%;
+		height: 300px;
+	}
+
+	figcaption {
+		/* Box Model */
+		width: 90%;
+
+		/* Positioning */
+		bottom: 70px;
+
+		/* Visual */
+		padding-top: 2%;
+	}
+
+}
+
+@media only screen and (max-width: 986px) {
+
+	/**
+	/* ASIDE
+	**/
+
+	.aside-content {
+		margin-top: 40px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+	/**
+	/* SECTION
+	**/
+
+	.section-content {
+		/* Box Model */
+		margin-top: 20px;
+	}
+
+	.section-header {
+		text-align: center;
+	}
+
+	/* --- PORTFOLIO --- */
+
+	.gallery {
+		/* Box Model */
+		padding-left: 0;
+	}
+
+	.gallery img {
+		/* Box Model */
+		width: 100%;
+		height: auto;
+	}
+
+	figcaption {
+		/* Box Model */
+		width: 100%;
+
+		/* Positioning */
+		bottom: 50px;
+
+		/* Visual */
+		padding-top: 3.8%;
+	}
+
+	/**
+	/* ASIDE
+	**/
+
+	.aside-content {
+		margin-top: 40px;
+	}
+
+	.aside-header {
+		text-align: center;
+	}
+
+	#icons {
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	/**
+	/* HEADER
+	**/
+
+	.navbar-header {
+		/* Box Model */
+		height: 90px;
+
+		/* Visual */
+		background: #C1B9A4;
+	}
+
+	#logo {
+		/* Box Model */
+		margin-top: -39px;
+		
+		/* Visual */
+		background: none;
+	}
+
+	.navbar-right-custom {
+		/* Box Model */
+		margin: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.navbar-right-custom li {
+		/* Visual */
+		display: inline-block;
+	}
+
+	/* --- NAVBAR TOGGLE --- */
+
+	.icon-bar {
+		background-color: #aaa !important;
+	}
+
+	/**
+	/* SECTION
+	**/
+
+	/* ABOUT */
+	#prof-img {
+		/* Box Model */
+		width: 100%;
+		margin-top: -20px;
+		margin-bottom: -80px;
+
+		/* Positioning */
+		clear: both;
+
+		/* Visual */
+		clip-path: inset(25px 0 100px);
+	}
+
+	section p {
+		padding-bottom: 12px; 
+	}
+
+}
