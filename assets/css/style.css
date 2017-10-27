@@ -175,11 +175,15 @@ section p a:hover {
 	justify-content: space-around;
 }
 
+figure {
+	/* Box Model */
+	margin-bottom: -5px;
+}
+
 .gallery img {
 	/* Box Model */
 	width: 300px;
 	height: 200px;
-	margin-bottom: -5px;
 }
 
 figcaption {
@@ -351,6 +355,15 @@ footer {
 
 @media only screen and (max-width: 768px) {
 	
+	/* To push body down when navbar aria expands */
+	body {
+		padding-top: 0;
+	}
+
+	.navbar-fixed-top {
+		position: relative;
+	}
+
 	/**
 	/* SECTION
 	**/
