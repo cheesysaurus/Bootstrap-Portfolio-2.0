@@ -201,6 +201,13 @@ figcaption {
 	background: #464646;
 }
 
+#rpg,
+#info-widget,
+#rock-paper-scissors {
+	cursor: default;
+	opacity: 0.75;
+}
+
 /* --- CONTACT -- */
 
 form {
@@ -281,6 +288,10 @@ input[type=submit] {
 #icons {
 	/* Box Model */
 	margin-left: -5px;
+}
+
+#icons a:hover {
+	box-decoration-break: underline;
 }
 
 /* ----------------------
