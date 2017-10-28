@@ -290,9 +290,9 @@ input[type=submit] {
 	margin-left: -5px;
 }
 
-#icons a:hover {
-	box-decoration-break: underline;
-}
+/* #icons a:hover {
+	opacity: 0.9;
+} */
 
 /* ----------------------
 		 FOOTER
